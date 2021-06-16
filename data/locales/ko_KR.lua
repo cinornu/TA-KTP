@@ -2,22 +2,16 @@ locale "ko_KR"
 ------------------------------------------------
 section "tome-zomnibus/data/achievements/half_rogue_death.lua"
 
-
--- new text
---[==[
 t("Honorary Roguelike Win", "명예로운 로그라이크 승리", "achievement name")
 t("Won the game in Normal or Semi-Roguelike permadeath mode without dying.", "일반 혹은 세미-로그라이크 모드에서 죽지 않고 게임에서 승리했다.", "_t")
---]==]
-
 
 ------------------------------------------------
 section "tome-zomnibus/data/alch_notify_timed-effects.lua"
 
-
--- new text
---[==[
 t("alchemist", "연금술사", "effect subtype")
 t("The Brotherhood of Alchemists", "연금술사 형제단", "_t")
+-- new text
+--[==[
 t("You have the ingredients for the following alchemist elixirs:", "You have the ingredients for the following alchemist elixirs:", "_t")
 --]==]
 
@@ -28,7 +22,6 @@ section "tome-zomnibus/data/half_rogue_descriptors.lua"
 t("Semi-Roguelike (mild)", "세미-로그라이크 (mild)", "birth descriptor name")
 t("#GOLD##{bold}#Semi-Roguelike (mild) mode#WHITE#", "#GOLD##{bold}#세미-로그라이크 모드 (mild)#WHITE#", "_t")
 t("Intermediate between Adventure and Roguelike modes.", "모험과 로그라이크 모드의 중간 정도에 위치한 모드입니다.", "_t")
-t("Use it if you're sort of ready for Roguelike, until the late game.#{normal}#", "Use it if you're sort of ready for Roguelike, until the late game.#{normal}#", "_t")
 t("Gain an extra 'life' when you:", "이때 추가적인 목숨이 부여됩니다:", "_t")
 t("  · Complete the \"Into the darkness\" quest", "  · \"어둠 속으로\" 퀘스트 완료", "_t")
 t("  · Go to the East", "  · 동대륙으로 향하기", "_t")
@@ -56,30 +49,32 @@ t("  · Secure a path to the mainland", "  · 본토로 향하는 길을 확보"
 t("  · Free each of the four Orc prides", "  · 네 오크 긍지를 각각 구출하는데 성공", "_t")
 t("  · Destroy the Sunwall", "  · 태양의 장벽을 파괴", "_t")
 t("  · Defeat the Atmos Tribe leaders in the Palace of Fumes", "  · 연기의 궁전에서 아트모스 부족 지도자들을 패퇴", "_t")
+-- new text
+--[==[
+t("Use it if you're sort of ready for Roguelike, until the late game.#{normal}#", "Use it if you're sort of ready for Roguelike, until the late game.#{normal}#", "_t")
+--]==]
 
 ------------------------------------------------
 section "tome-zomnibus/data/landmark_timed_effects.lua"
 
-
+t("landmark", "랜드마크", "effect subtype")
+t("<<?? unknown>>", "<<?? 알 수 없음>>", "_t")
 -- new text
 --[==[
-t("landmark", "landmark", "effect subtype")
 t("You are traveling to the landmark '%s at %d,%d'.  The auto-explore function (currently bound to '%s') will continue to this landmark in preference to other destinations, until you arrive at the landmark, leave the level, or cancel this effect.", "You are traveling to the landmark '%s at %d,%d'.  The auto-explore function (currently bound to '%s') will continue to this landmark in preference to other destinations, until you arrive at the landmark, leave the level, or cancel this effect.", "tformat")
 t("Meta-", "Meta-", "_t")
 t("Alt-", "Alt-", "_t")
 t("Shift-", "Shift-", "_t")
 t("Ctrl-", "Ctrl-", "_t")
-t("<<?? unknown>>", "<<?? unknown>>", "_t")
 --]==]
 
 
 ------------------------------------------------
 section "tome-zomnibus/data/opt_in_adventurers_timed_effects.lua"
 
-
+t("evade", "회피", "effect subtype")
 -- new text
 --[==[
-t("evade", "회피", "effect subtype")
 t("You are evading adventurers parties and ziguranth patrols.  You will automatically evade without prompt while this effect lasts.", "You are evading adventurers parties and ziguranth patrols.  You will automatically evade without prompt while this effect lasts.", "_t")
 t("You are evading orc patrols.  You will automatically evade without prompt while this effect lasts.", "You are evading orc patrols.  You will automatically evade without prompt while this effect lasts.", "_t")
 t("You are evading Sun Paladin patrols and Anorithil patrols.  You will automatically evade without prompt while this effect lasts.", "You are evading Sun Paladin patrols and Anorithil patrols.  You will automatically evade without prompt while this effect lasts.", "_t")
@@ -89,61 +84,52 @@ t("You are evading Sun Paladin patrols and Anorithil patrols.  You will automati
 ------------------------------------------------
 section "tome-zomnibus/data/resustain_talents.lua"
 
-
--- new text
---[==[
-t("Restart Sustains", "Restart Sustains", "talent name")
-t("The ability to restart sustains while resting.", "The ability to restart sustains while resting.", "_t")
-t("#LIGHT_BLUE#Talent %s is active; not restarting marked sustains.#LAST#", "#LIGHT_BLUE#Talent %s is active; not restarting marked sustains.#LAST#", "logPlayer")
---]==]
-
+t("Restart Sustains", "유지기 재시작", "talent name")
+t("The ability to restart sustains while resting.", "휴식하는 동안 유지기 재시작 능력이 발동됩니다.", "_t")
+t("#LIGHT_BLUE#Talent %s is active; not restarting marked sustains.#LAST#", "#LIGHT_BLUE#%s 기술 활성화됨; 미등록 유지기는 재시작 안됨.#LAST#", "logPlayer")
 
 ------------------------------------------------
 section "tome-zomnibus/data/resustain_timed_effects.lua"
 
-
+t("sustain", "유지기", "effect subtype")
+t("One or more of your marked sustains has been deactivated:", "하나 혹은 그 이상의 등록된 유지기가 비활성화됨:", "_t")
 -- new text
 --[==[
-t("sustain", "sustain", "effect subtype")
-t("One or more of your marked sustains has been deactivated:", "One or more of your marked sustains has been deactivated:", "_t")
 t("\
   · %s", "\
   · %s", "tformat")
 --]==]
 
-
 ------------------------------------------------
 section "tome-zomnibus/hooks/hooks-alch-notify.lua"
 
-
+t("#GOLD##{bold}#Alchemist potion notifications#{normal}##LAST#", "#GOLD##{bold}#연금술사 포션 알림#{normal}##LAST#", "_t")
+t("Alchemist Notifications", "연금술사 알림", "_t")
+t("enabled", "켜짐", "_t")
+t("disabled", "꺼짐", "_t")
 -- new text
 --[==[
-t("#GOLD##{bold}#Alchemist potion notifications#{normal}##LAST#", "#GOLD##{bold}#Alchemist potion notifications#{normal}##LAST#", "_t")
-t("Alchemist Notifications", "Alchemist Notifications", "_t")
 t([[If enabled, you will be notified via popup when you collect all the ingredients needed for one of the potions assigned to you as part of the Brotherhood of Alchemists quest.  A status icon will also be provided, listing the potions for which you have all ingredients.
 You may need to restart the game for this change to fully take effect.]], [[If enabled, you will be notified via popup when you collect all the ingredients needed for one of the potions assigned to you as part of the Brotherhood of Alchemists quest.  A status icon will also be provided, listing the potions for which you have all ingredients.
 You may need to restart the game for this change to fully take effect.]], "_t")
-t("enabled", "켜짐", "_t")
-t("disabled", "꺼짐", "_t")
 --]==]
 
 
 ------------------------------------------------
 section "tome-zomnibus/hooks/hooks-compare.lua"
 
-
--- new text
---[==[
 t("Activate the infusion to heal yourself for %d life over %d turns.", "주입물을 활성화하여 %d 턴 동안 총 %d 생명력을 회복합니다.", "tformat", {2,1})
-t("Activate the infusion to heal yourself for %d(%s) life over %d(%s) turns.", "Activate the infusion to heal yourself for %d(%s) life over %d(%s) turns.", "tformat")
+t("Activate the infusion to heal yourself for %d(%s) life over %d(%s) turns.", "주입물을 활성화하여 %d (%s) 턴 동안 총 %d (%s) 생명력을 회복합니다.", "tformat", {3,4,1,2})
 t("Activate the infusion to instantly heal yourself for %d then cleanse 1 wound, poison, and disease effect.", "주입물을 활성화하여 턴 소모 없이 생명력을 %d 회복하고, 상처, 독, 질병을 하나 치료합니다.", "tformat")
-t("Activate the infusion to instantly heal yourself for %d(%s) then cleanse 1 wound, poison and disease effect.", "Activate the infusion to instantly heal yourself for %d(%s) then cleanse 1 wound, poison and disease effect.", "tformat")
+t("Activate the infusion to instantly heal yourself for %d(%s) then cleanse 1 wound, poison and disease effect.", "주입물을 활성화하여 턴 소모 없이 생명력을 %d (%s) 회복하고, 상처, 독, 질병을 하나 치료합니다.", "tformat")
 t([[Activate the infusion to cure yourself of one random %s effect and reduce all damage taken by %d%% for %d turns.
 Also removes cross-tier effects of the affected types for free.]], [[주입물을 활성화하여 무작위한 %s 효과를 하나 제거하고 %d 턴 동안 받는 모든 피해를 %d%% 줄입니다.
 또한 해당 종류의 압도 효과도 추가로 제거합니다.]], "tformat", {1,3,2})
 t([[Activate the infusion to cure yourself of one random %s effect and reduce all damage taken by %d%%(%s%%) for %d(%s) turns.
-Also removes cross-tier effects of the affected types for free.]], [[Activate the infusion to cure yourself of one random %s effect and reduce all damage taken by %d%%(%s%%) for %d(%s) turns.
-Also removes cross-tier effects of the affected types for free.]], "tformat")
+Also removes cross-tier effects of the affected types for free.]], [[주입물을 활성화하여 무작위한 %s 효과를 하나 제거하고 %d%% (%s%%) 턴 동안 받는 모든 피해를 %d (%s) 줄입니다.
+또한 해당 종류의 압도 효과도 추가로 제거합니다.]], "tformat", {1,4,5,2,3})
+-- new text
+--[==[
 t([[Activate the infusion to increase movement speed by %d%% for 1 game turn.
 You gain 100%% stun, daze, and pin immunity during the effect.
 Any actions other than movement will cancel the effect.
@@ -306,14 +292,13 @@ t("Medical injector allows using therapeutics with %d%%(%s) efficiency and coold
 ------------------------------------------------
 section "tome-zomnibus/hooks/hooks-cooldowns.lua"
 
-
--- new text
---[==[
-t("#GOLD##{bold}#Passive cooldown trackers#{normal}##LAST#", "#GOLD##{bold}#Passive cooldown trackers#{normal}##LAST#", "_t")
-t("Passive Cooldowns", "Passive Cooldowns", "_t")
-t("If enabled (the default), cooldown trackers will be displayed in the status area of the Minimalist UI for passive talents that can trigger effects uncer certain conditions.  Basically, if a talent or prodigy's description says something to the effect of, \"WARNING:  This has a cooldown\", a tracker will be shown when its effect triggers.", "If enabled (the default), cooldown trackers will be displayed in the status area of the Minimalist UI for passive talents that can trigger effects uncer certain conditions.  Basically, if a talent or prodigy's description says something to the effect of, \"WARNING:  This has a cooldown\", a tracker will be shown when its effect triggers.", "_t")
+t("#GOLD##{bold}#Passive cooldown trackers#{normal}##LAST#", "#GOLD##{bold}#지속기 대기시간 추적기#{normal}##LAST#", "_t")
+t("Passive Cooldowns", "지속기 대기시간", "_t")
 t("enabled", "켜짐", "_t")
 t("disabled", "꺼짐", "_t")
+-- new text
+--[==[
+t("If enabled (the default), cooldown trackers will be displayed in the status area of the Minimalist UI for passive talents that can trigger effects uncer certain conditions.  Basically, if a talent or prodigy's description says something to the effect of, \"WARNING:  This has a cooldown\", a tracker will be shown when its effect triggers.", "If enabled (the default), cooldown trackers will be displayed in the status area of the Minimalist UI for passive talents that can trigger effects uncer certain conditions.  Basically, if a talent or prodigy's description says something to the effect of, \"WARNING:  This has a cooldown\", a tracker will be shown when its effect triggers.", "_t")
 --]==]
 
 
